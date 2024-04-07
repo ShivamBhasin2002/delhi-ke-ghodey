@@ -1,0 +1,312 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "horseId",
+						"type": "int256"
+					}
+				],
+				"name": "addRaceHorse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "int256",
+						"name": "horseId",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bidAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "bidOnHorse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "int256",
+								"name": "id",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "int256",
+								"name": "speed",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "acceleration",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "agility",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "stamina",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "strength",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "rarity",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "theta",
+								"type": "int256"
+							}
+						],
+						"internalType": "struct horsey.Horse",
+						"name": "newHorse",
+						"type": "tuple"
+					}
+				],
+				"name": "breedOrExhaustHorse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "horses",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "id",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "int256",
+						"name": "speed",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "acceleration",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "agility",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "stamina",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "strength",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "rarity",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "theta",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "int256",
+								"name": "id",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "int256",
+								"name": "speed",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "acceleration",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "agility",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "stamina",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "strength",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "rarity",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "theta",
+								"type": "int256"
+							}
+						],
+						"internalType": "struct horsey.Horse",
+						"name": "horse",
+						"type": "tuple"
+					}
+				],
+				"name": "initialiseHorse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "timestamp",
+						"type": "string"
+					}
+				],
+				"name": "initialiseRace",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "race",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "timestamp",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/horsey.sol": "horsey"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/horsey.sol": {
+			"keccak256": "0xd975b0b7c20a71f67c1423e8b44fc7cec88d3a03142a8bb3d4832a17dd1dc979",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://7a59102c56a087009e9f8c772cf19c6496b19a2155b23f6b53dcac86970d40dc",
+				"dweb:/ipfs/QmPYsfCWo1kXJnEPoHY4zY3Sk8YbQzzVyw8cusaiPhwJFg"
+			]
+		}
+	},
+	"version": 1
+}
